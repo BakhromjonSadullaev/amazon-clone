@@ -93,22 +93,22 @@ function Home() {
         </div>
         <div className="category-row">
           <Category
-            tag={"/beauty_picks"}
+            tag={"beauty_picks"}
             title={"Beauty picks"}
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg"
           />
           <Category
-            tag={"/amazon_basics"}
+            tag={"amazon_basics"}
             title={"AmazonBasics"}
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg"
           />
           <Category
-            tag={"/home_bedding"}
+            tag={"home_bedding"}
             title={"Explore home bedding"}
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg"
           />
           <Category
-            tag={"/home_fit"}
+            tag={"home_fit"}
             title={"Get fit at home"}
             image="https://images-na.ssl-images-amazon.com/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg"
           />

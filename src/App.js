@@ -49,7 +49,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path={`${category.route}`}>
+          <Route path={`/${category.route}`}>
             <Header />
             <CategoryProduct />
             <Footer />

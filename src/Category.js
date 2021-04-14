@@ -18,13 +18,11 @@ const Category = ({ tag, title, image }) => {
   return (
     <div className="category">
       <h3 onClick={() => console.log(category)}>{title}</h3>
-
-      <img onClick={categoryFn} className="category-img" src={image} alt="" />
-      <Link style={{ textDecoration: "none" }} to={`${category.route}`}>
-        <p
-          onClick={useEffect(() => categoryFn, [])}
-          className="category-linker"
-        >
+      <Link to={tag}>
+        <img onClick={categoryFn} className="category-img" src={image} alt="" />
+      </Link>
+      <Link style={{ textDecoration: "none" }} to={tag}>
+        <p onClick={categoryFn} className="category-linker">
           Shop now{" "}
         </p>
       </Link>
