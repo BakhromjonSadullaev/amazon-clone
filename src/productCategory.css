@@ -32,6 +32,16 @@
   display: flex;
 }
 
+.na-info {
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(255, 255, 255);
+  margin-right: auto;
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: rgb(255, 136, 0);
+}
+
 .productCategory > button {
   margin-top: 2.5rem;
   width: 100%;

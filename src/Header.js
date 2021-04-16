@@ -8,7 +8,7 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { auth } from "./firebase";
 
 function Header() {
-  const [{ basket, user, userInfo }, dispatch] = useStateValue();
+  const [{ basket, user, wishlist }, dispatch] = useStateValue();
 
   const handleAuthentification = () => {
     if (user) {
@@ -52,10 +52,17 @@ function Header() {
             </span>
           </div>
         </Link>
-        <div className="header-option">
-          <span className="header-option-lineOne">Products</span>
-          <span className="header-option-lineTwo">Wishlist</span>
-        </div>
+        <Link style={{ textDecoration: "none" }} to="wishlist">
+          <div className="header-option">
+            <span className="header-option-lineOne">
+              Products{" "}
+              {wishlist.length > 0 && (
+                <strong className="wish-num"> {wishlist.length}</strong>
+              )}
+            </span>
+            <span className="header-option-lineTwo">Wishlist</span>
+          </div>
+        </Link>
         <div className="header-option">
           <span className="header-option-lineOne">Your</span>
           <span className="header-option-lineTwo">Prime</span>

@@ -3,11 +3,18 @@ import "./checkoutProduct.css";
 
 import { useStateValue } from "./StateProvider";
 
-const CheckoutProduct = ({ id, image, title, price, rating, noBtn }) => {
+const CheckoutProduct = ({ id, image, title, price, rating, noBtn, wsh }) => {
   const [{ basket, userInfo }, dispatch] = useStateValue();
   const removeFromBasket = () => {
     dispatch({
       type: "REMOVE_FROM_BASKET",
+      id: id,
+    });
+  };
+
+  const removeFromWishlist = () => {
+    dispatch({
+      type: "REMOVE_FROM_WISHLIST",
       id: id,
     });
   };
@@ -30,7 +37,9 @@ const CheckoutProduct = ({ id, image, title, price, rating, noBtn }) => {
             ))}
         </div>
         {!noBtn && (
-          <button onClick={removeFromBasket}>Remove from Basket</button>
+          <button onClick={wsh ? removeFromWishlist : removeFromBasket}>
+            Remove from {wsh ? "Wishlist" : "Basket"}{" "}
+          </button>
         )}
       </div>
     </div>

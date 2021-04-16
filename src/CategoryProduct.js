@@ -31,6 +31,7 @@ const CategoryProduct = () => {
               price={24.5}
             />
             <ProductCategory
+              id={3}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/31-CMmU39zL.jpg"
               }
@@ -40,6 +41,8 @@ by Olaplex"
               price={19.5}
             />
             <ProductCategory
+              na
+              id={4}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/41LUyB4EOaL.jpg"
               }
@@ -48,6 +51,7 @@ by Olaplex"
               price={33.5}
             />
             <ProductCategory
+              id={5}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/41BGSSgc1KL.jpg"
               }
@@ -56,6 +60,8 @@ by Olaplex"
               price={20}
             />
             <ProductCategory
+              na
+              id={6}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/41+OcSh2YsL.jpg"
               }
@@ -64,6 +70,7 @@ by Olaplex"
               price={11.9}
             />
             <ProductCategory
+              id={7}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/41l-4yOemPL.jpg"
               }
@@ -72,6 +79,8 @@ by Olaplex"
               price={19.9}
             />
             <ProductCategory
+              na
+              id={8}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/5118XlrWwlL.jpg"
               }
@@ -91,6 +100,7 @@ by CeraVe"
           </div>
           <div className=" product-container">
             <ProductCategory
+              id={9}
               image={
                 "https://m.media-amazon.com/images/I/71i08qnZeDL._AC_UL320_.jpg"
               }
@@ -99,6 +109,8 @@ by CeraVe"
               price={115.9}
             />
             <ProductCategory
+              na
+              id={10}
               image={
                 "https://m.media-amazon.com/images/I/91-K533J3nL._AC_UL320_.jpg"
               }
@@ -107,6 +119,7 @@ by CeraVe"
               price={499.9}
             />
             <ProductCategory
+              id={11}
               image={
                 "https://m.media-amazon.com/images/I/71s7HbyqzEL._AC_UL320_.jpg"
               }
@@ -115,6 +128,8 @@ by CeraVe"
               price={220}
             />
             <ProductCategory
+              na
+              id={12}
               image={
                 "https://m.media-amazon.com/images/I/81K+1MCVhML._AC_UL320_.jpg"
               }
@@ -123,6 +138,7 @@ by CeraVe"
               price={14.9}
             />
             <ProductCategory
+              id={13}
               image={
                 "https://m.media-amazon.com/images/I/719JuUxcZuL._AC_UL320_.jpg"
               }
@@ -131,6 +147,7 @@ by CeraVe"
               price={69.9}
             />
             <ProductCategory
+              id={14}
               image={
                 "https://m.media-amazon.com/images/I/91qC+UYYwIL._AC_UL320_.jpg"
               }
@@ -139,6 +156,7 @@ by CeraVe"
               price={79.9}
             />
             <ProductCategory
+              id={15}
               image={
                 "https://m.media-amazon.com/images/I/81gnyhw-npL._AC_UL320_.jpg"
               }
@@ -147,6 +165,7 @@ by CeraVe"
               price={45}
             />
             <ProductCategory
+              id={16}
               image={
                 "https://m.media-amazon.com/images/I/719jeVMtYQL._AC_UL320_.jpg"
               }
@@ -166,6 +185,7 @@ by CeraVe"
           </div>
           <div className=" product-container">
             <ProductCategory
+              id={17}
               image={
                 "https://m.media-amazon.com/images/I/81efXN-0QeL._AC_UL320_.jpg"
               }
@@ -174,6 +194,8 @@ by CeraVe"
               price={23}
             />
             <ProductCategory
+              na
+              id={18}
               image={
                 "https://m.media-amazon.com/images/I/911T99JjMsL._AC_UL320_.jpg"
               }
@@ -182,6 +204,7 @@ by CeraVe"
               price={189.9}
             />
             <ProductCategory
+              id={19}
               image={
                 "https://m.media-amazon.com/images/I/71g0htjyONL._AC_UL320_.jpg"
               }
@@ -190,6 +213,7 @@ by CeraVe"
               price={33.5}
             />
             <ProductCategory
+              id={20}
               image={
                 "https://m.media-amazon.com/images/I/81uFkMprpHL._AC_UL320_.jpg"
               }
@@ -198,6 +222,7 @@ by CeraVe"
               price={46.8}
             />
             <ProductCategory
+              id={21}
               image={
                 "https://m.media-amazon.com/images/I/81RPda8XXdL._AC_UL320_.jpg"
               }
@@ -206,6 +231,8 @@ by CeraVe"
               price={21.7}
             />
             <ProductCategory
+              na
+              id={22}
               image={
                 "https://m.media-amazon.com/images/I/61DpIiZA3FL._AC_UL320_.jpg"
               }
@@ -214,6 +241,8 @@ by CeraVe"
               price={14.8}
             />
             <ProductCategory
+              na
+              id={23}
               image={
                 "https://m.media-amazon.com/images/I/91Uuiwz0-nL._AC_UL320_.jpg"
               }
@@ -222,6 +251,7 @@ by CeraVe"
               price={74.6}
             />
             <ProductCategory
+              id={24}
               image={
                 "https://m.media-amazon.com/images/I/91xmmFoNhWL._AC_UL320_.jpg"
               }
@@ -244,6 +274,7 @@ by CeraVe"
           </div>
           <div className=" product-container">
             <ProductCategory
+              id={25}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/41MXvr5tYDL.jpg"
               }
@@ -253,6 +284,7 @@ by DEGOL"
               price={23}
             />
             <ProductCategory
+              id={26}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/51OO3MXlqKL.jpg"
               }
@@ -261,6 +293,7 @@ by DEGOL"
               price={189.9}
             />
             <ProductCategory
+              id={27}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/51N2vGDng5L.jpg"
               }
@@ -270,6 +303,7 @@ by Master Lock"
               price={33.5}
             />
             <ProductCategory
+              id={28}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/51LHuTczHqL.jpg"
               }
@@ -278,6 +312,8 @@ by Master Lock"
               price={46.8}
             />
             <ProductCategory
+              na
+              id={29}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/41JHxJpyGQL.jpg"
               }
@@ -286,6 +322,7 @@ by Master Lock"
               price={21.7}
             />
             <ProductCategory
+              id={30}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/51JNxIyXL1L.jpg"
               }
@@ -294,6 +331,7 @@ by Master Lock"
               price={14.8}
             />
             <ProductCategory
+              id={31}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/51N2L7QzDmL.jpg"
               }
@@ -302,6 +340,8 @@ by Master Lock"
               price={74.6}
             />
             <ProductCategory
+              na
+              id={32}
               image={
                 "https://images-na.ssl-images-amazon.com/images/I/41uzlqPYOML.jpg"
               }

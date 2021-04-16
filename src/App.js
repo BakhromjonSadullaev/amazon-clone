@@ -9,6 +9,7 @@ import Payment from "./Payment";
 import Orders from "./Orders";
 import Footer from "./Footer";
 import CategoryProduct from "./CategoryProduct";
+import Wishlist from "./Wishlist";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { auth } from "./firebase";
@@ -49,6 +50,10 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+          <Route path="/wishlist">
+            <Header />
+            <Wishlist />
+          </Route>
           <Route path={`/${category.route}`}>
             <Header />
             <CategoryProduct />

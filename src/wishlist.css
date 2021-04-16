@@ -1,0 +1,20 @@
+.wishlist {
+  padding: 2rem;
+}
+
+.empty-wishlist {
+  margin-top: 10%;
+  width: 50%;
+  margin-left: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-radius: 15px;
+}
+
+.empty-wishlist > h1 {
+  margin-bottom: 1rem;
+}

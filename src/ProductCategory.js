@@ -2,8 +2,8 @@ import React from "react";
 import "./productCategory.css";
 import { useStateValue } from "./StateProvider";
 
-const ProductCategory = ({ id, image, title, rating, price }) => {
-  const [{ basket }, dispatch] = useStateValue();
+const ProductCategory = ({ id, image, title, rating, price, na }) => {
+  const [{ basket, wishlist }, dispatch] = useStateValue();
 
   const addToBasket = () => {
     dispatch({
@@ -18,8 +18,23 @@ const ProductCategory = ({ id, image, title, rating, price }) => {
     });
   };
 
+  const addToWishlist = () => {
+    dispatch({
+      type: "ADD_TO_WISHLIST",
+      wished: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
+    });
+  };
+
+  console.log(wishlist);
   return (
     <div className="productCategory">
+      {na && <p className="na-info">Not available</p>}
       <img src={image} alt="" />
       <p>{title}</p>
       <div className="price-ranking">
@@ -32,7 +47,9 @@ const ProductCategory = ({ id, image, title, rating, price }) => {
         </div>
         <strong>$ {price}</strong>
       </div>
-      <button onClick={addToBasket}>Coming soon ...</button>
+      <button onClick={na ? addToWishlist : addToBasket}>
+        {na ? "Add to wishlist" : `Add to cart `}
+      </button>
     </div>
   );
 };

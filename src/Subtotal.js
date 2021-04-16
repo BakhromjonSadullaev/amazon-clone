@@ -10,7 +10,7 @@ import { useHistory } from "react-router-dom";
 const Subtotal = () => {
   const history = useHistory();
 
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
   console.log(basket);
 
   return (
@@ -34,7 +34,13 @@ const Subtotal = () => {
         prefix={"$"}
       />
 
-      <button onClick={(e) => basket.length > 0 && history.push("/payment")}>
+      <button
+        onClick={(e) =>
+          basket.length > 0
+            ? user && history.push("/payment")
+            : alert("Please sign in or add some products")
+        }
+      >
         Proceed to Checkout
       </button>
     </div>

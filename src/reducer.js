@@ -2,6 +2,7 @@ export const initialState = {
   basket: [],
   user: null,
   category: "",
+  wishlist: [],
 };
 
 export const getBasketTotal = (basket) =>
@@ -31,6 +32,23 @@ const reducer = (state, action) => {
         ...state,
         basket: newBasket,
       };
+    case "REMOVE_FROM_WISHLIST":
+      const wishIndex = state.wishlist.findIndex(
+        (wishlistItem) => wishlistItem.id === action.id
+      );
+
+      let newWishlist = [...state.wishlist];
+
+      if (wishIndex >= 0) {
+        newWishlist.splice(wishIndex, 1);
+      } else {
+        console.warn(`Cant remove product ${action.id}`);
+      }
+
+      return {
+        ...state,
+        wishlist: newWishlist,
+      };
     case "SET_USER":
       return {
         ...state,
@@ -43,8 +61,15 @@ const reducer = (state, action) => {
       };
     case "CATEGORY":
       return {
+        ...state,
         category: action.payload,
       };
+    case "ADD_TO_WISHLIST":
+      return {
+        ...state,
+        wishlist: [...state.wishlist, action.wished],
+      };
+
     default:
       return state;
   }
